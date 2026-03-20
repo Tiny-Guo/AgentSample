@@ -1,0 +1,40 @@
+# Claude Code local settings
+.claude/
+
+# Uploaded files
+.files/
+
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Chainlit (optional - uncomment if you don't want to share UI config)
+# .chainlit/
+
+# Output files
+data/output/
+
+# 忽略 data 文件夹下的所有内容
+data/**/*
+
+# 如果你想保留 data 目录本身（让它在 git 中存在但不含文件），可以排除 .gitkeep
+!data/.gitkeep
+
+# 忽略 Chainlit 自动生成的配置和翻译
+.chainlit/
+chainlit.md
+
+# 忽略生成的报表文件
+reports/
+
+# 忽略日志文件
+*.txt
+!README.md
+!requirements.txt
